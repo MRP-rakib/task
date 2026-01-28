@@ -6,7 +6,7 @@ interface navbarprops {
 }
 function Navbar({ setisOpen }: navbarprops) {
   return (
-    <nav className="py-2 px-4 lg:px-0 sticky top-0 left-0 w-full bg-[#111B3C] text-[#FFFFFF]">
+    <nav className="py-2 px-4 lg:px-0 sticky top-0 left-0 w-full bg-[#111B3C] text-[#FFFFFF] z-40">
 
       <div className="flex items-center justify-between lg:px-6">
         <div className="flex items-center gap-2">
