@@ -1,6 +1,7 @@
 'use client'
 import CallDetails from '@/components/callLogs/CallDetails'
-import CallLists from '@/components/callLogs/CallLists';
+import CallList from '@/components/callLogs/CallList';
+// import CallLists from '@/components/callLogs/CallLists';
 import { callinfoType } from '@/components/types/callInfoType';
 import { useState } from 'react';
 const callInfo = [
@@ -55,7 +56,7 @@ function Call() {
   return (
     <div className='bg-[#121E49] px-6'>
       <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 pt-6 items-start'>
-        <CallLists callinfo ={callInfo} onSelect = {(call=>setSelectCall(call))} activeId={selectCall.id}/>
+        <CallList callinfo ={callInfo} onSelect = {(call=>setSelectCall(call))} activeId={selectCall.id}/>
         <CallDetails selectCall ={selectCall}/>
       </div>
       </div>

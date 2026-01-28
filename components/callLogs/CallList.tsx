@@ -5,7 +5,7 @@ callinfo:callinfoType[]
 onSelect: (call: callinfoType) => void;
 activeId:number
 }
-function CallLists({callinfo,onSelect,activeId}:callListTYpe) {
+function CallList({callinfo,onSelect,activeId}:callListTYpe) {
   const callTypeStyles: Record<string, string> = {
     'AI Resolved': 'bg-linear-to-r from-[rgba(0,201,80,0.2)] to-[rgba(0,188,125,0.2)] text-[#05DF72] border-[#10B981]',
     'Warm Transfer': 'bg-linear-to-r from-[rgba(255,105,0,0.2)] to-[rgba(251,44,54,0.2)] text-[#FF8904] border-[#FF6900]',
@@ -64,4 +64,4 @@ function CallLists({callinfo,onSelect,activeId}:callListTYpe) {
   )
 }
 
-export default CallLists
+export default CallList
