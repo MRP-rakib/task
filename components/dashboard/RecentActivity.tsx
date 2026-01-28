@@ -3,7 +3,7 @@ const activities = [
     {
         id: 1,
         text: "AI booked appointment for iPhone 13 screen repair",
-        timestamp: '2 min ago', // ২ মিনিট আগে
+        timestamp: '2 min ago',
         status: "success",
     },
     {
