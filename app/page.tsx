@@ -1,7 +1,7 @@
-import CallTrends from "@/components/dashboard/callTrends/CallTrends";
-import OverViewCard from "@/components/dashboard/overviewDetails/OverViewCard";
-import RecentActivity from "@/components/dashboard/recentActivity/RecentActivity";
-import RepairRequest from "@/components/dashboard/repairRequest/RepairRequest";
+import CallTrends from "@/components/dashboard/CallTrends";
+import OverViewCard from "@/components/dashboard/OverViewCard";
+import RecentActivity from "@/components/dashboard/RecentActivity";
+import RepairRequest from "@/components/dashboard/RepairRequest";
 
 export default function Home() {
   return (

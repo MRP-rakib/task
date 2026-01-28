@@ -1,4 +1,4 @@
-import WeeklyChart from '@/components/dashboard/chart/WeeklyChart'
+import WeeklyChart from '@/components/dashboard/WeeklyChart'
 import FilterBtn from "@/components/utils/btn/FilterBtn";
 
 function CallTrends() {
