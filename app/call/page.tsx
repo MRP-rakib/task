@@ -1,7 +1,6 @@
 'use client'
 import CallDetails from '@/components/callLogs/CallDetails'
 import CallList from '@/components/callLogs/CallList';
-// import CallLists from '@/components/callLogs/CallLists';
 import { callinfoType } from '@/components/types/callInfoType';
 import { useState } from 'react';
 const callInfo = [
