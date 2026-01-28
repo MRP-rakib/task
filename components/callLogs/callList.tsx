@@ -20,7 +20,7 @@ function callList({callinfo,onSelect,activeId}:callListTYpe) {
         </span>
         <input type="text" placeholder='Search by phone number, issue type...' className='text-[#62748E] w-full outline-0' />
       </div>
-      <div className='bg-[rgba(15,23,43,0.5)] border border-[rgba(43,128,255,0.2)]  rounded'>
+      <div className='bg-[rgba(15,23,43,0.5)] border border-[rgba(43,128,255,0.2)]  rounded-2xl'>
         <div className='p-4 border-b border-[rgba(43,128,255,0.2)] '>
           <h5 className='text-white text-[18px] lg:text-[20px]'>Call List</h5>
         </div>

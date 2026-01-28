@@ -9,9 +9,9 @@ const overviewData = [
 ]
 function OverViewCard() {
     return (
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-6 px6 gap-6'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-4 lg:py-6 gap-6'>
             {overviewData.map(d => (
-                <div key={d.id} className='bg-[rgba(15,23,43,0.5)] border border-[rgba(43,128,255,0.2)] py-6.25 px-6 flex justify-between items-start rounded'>
+                <div key={d.id} className='bg-[rgba(15,23,43,0.5)] border border-[rgba(43,128,255,0.2)] py-6.25 px-6 flex justify-between items-start rounded-2xl'>
                     <div className=' flex flex-col gap-4'>
                         <div className='flex flex-col gap-2'>
                             <p className='text-[#90A1B9] text-[14px]'>{d.cardTitle}</p>

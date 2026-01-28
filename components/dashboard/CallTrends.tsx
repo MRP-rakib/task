@@ -1,9 +1,9 @@
 import WeeklyChart from '@/components/dashboard/WeeklyChart'
-import FilterBtn from "@/components/utils/btn/FilterBtn";
+import FilterBtn from "@/components/utils/FilterBtn";
 
 function CallTrends() {
   return (
-    <div className="bg-[rgba(15,23,43,0.5)] border border-[rgba(43,128,255,0.2)] p-6.25 rounded">
+    <div className="bg-[rgba(15,23,43,0.5)] border border-[rgba(43,128,255,0.2)] p-6.25 rounded-2xl">
         <div className=" flex items-center justify-between">
             <div className="flext flex-col gap-1">
              <h5 className="text-[16px] lg:text-[20px] text-[#FFFFFF]">Call Trends - This Week</h5>

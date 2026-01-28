@@ -1,5 +1,5 @@
 import React from 'react'
-import FilterBtn from '../utils/btn/FilterBtn'
+import FilterBtn from '../utils/FilterBtn'
 import { FileText, PlayCircle } from 'lucide-react'
 import { callinfoType } from '../types/callInfoType';
   interface selectCallType{
@@ -20,7 +20,7 @@ function CallDetails({selectCall}:selectCallType) {
           <FilterBtn option1='Today' option2='Tomorrow' option3='Yesterday'/>
         </div>
         
-      <div className='bg-[rgba(15,23,43,0.5)] border  border-[rgba(43,128,255,0.2)] rounded'>
+      <div className='bg-[rgba(15,23,43,0.5)] border  border-[rgba(43,128,255,0.2)] rounded-2xl'>
        <div className='p-4 border-b border-[rgba(43,128,255,0.2)]'>
          <h5 className='text-white text-[18px] lg:text-[20px]'>Call Details</h5>
        </div>

@@ -6,7 +6,7 @@ const repairRequests = [
 ];
 function RepairRequest() {
   return (
-    <div className='p-6.25 bg-[rgba(15,23,43,0.5)] border border-[rgba(43,128,255,0.2)] rounded text-white'>
+    <div className='p-4 lg:p-6.25 bg-[rgba(15,23,43,0.5)] border border-[rgba(43,128,255,0.2)] rounded-2xl text-white'>
       <h5 className="text-[18px] lg:text-[20px]">Top Repair Requests</h5>
       <div className="flex flex-col gap-2 mt-4">
         {repairRequests.map((item) => (

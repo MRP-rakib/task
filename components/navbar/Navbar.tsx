@@ -1,5 +1,6 @@
 import { Bell, Menu } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 interface navbarprops {
   setisOpen: React.Dispatch<React.SetStateAction<boolean>>
@@ -13,14 +14,16 @@ function Navbar({ setisOpen }: navbarprops) {
           <span onClick={()=>setisOpen(true)} className="md:hidden">
           <Menu size={24}/>
         </span>
-        <h4 className="text-[14px] lg:text-2xl ">Dashboard Overview</h4>
+        <Link href='/' className=" relative z-30">
+        <h4 className="text-[14px] lg:text-2xl">Dashboard Overview</h4>
+        </Link>
         </div>
         <div className=" flex items-center gap-4 lg:gap-10">
-          <span>
+          <span className="cursor-pointer">
             <Bell />
           </span>
           <div className="w-10 h-10 md:w-20 md:h-20 rounded-full flex items-center justify-between">
-            <Image src='/image/profile.jpg' width={80} height={80} alt="profile-image" className="w-10 h-10 md:w-20 md:h-20 object-cover rounded-full" />
+            <Image src='/image/profile.jpg' width={80} height={80} alt="profile-image" className="w-10 h-10 md:w-20 md:h-20 object-cover cursor-pointer rounded-full" />
           </div>
         </div>
       </div>
