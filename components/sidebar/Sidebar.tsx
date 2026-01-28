@@ -19,7 +19,7 @@ function Sidebar({isOpen,setisOpen}:sidebarprops) {
   
 
   return (
-   <aside className={`${isOpen?'w-full opacity-100 visible':'w-0 opacity-0 invisible'} bg-[rgba(0,0,0,0.5)] lg:opacity-100 lg:visible absolute top-0 left-0 transition-all duration-300 md:w-60.25 md:sticky z-50`}>
+   <aside className={`${isOpen?'w-full opacity-100 visible':'w-0 opacity-0 invisible'} bg-[rgba(0,0,0,0.5)] h-full md:opacity-100 md:visible absolute top-0 left-0 transition-all duration-300 md:w-60.25 md:sticky z-50`}>
      <div className="top-0 left-0 fixed md:sticky px-2 flex flex-col overflow-y-auto w-60.25 h-screen justify-between bg-[#111B3C] border-r border-[#2B7FFF33]">
       <span onClick={()=>setisOpen(false)} className="text-white md:hidden absolute right-2  top-2 w-8 h-8 rounded-full border flex items-center justify-center border-[#2B7FFF33]">
         <X/>
