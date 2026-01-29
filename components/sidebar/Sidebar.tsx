@@ -3,7 +3,6 @@ import { X, Zap } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { useEffect } from "react"
 const menu = [
   { id: 1, icon: '/icon/home.png', href: '/', name: 'Dashboard Overview' },
   { id: 2, icon: '/icon/call.png', href: '/call', name: 'Call Logs' },
