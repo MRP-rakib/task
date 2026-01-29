@@ -53,8 +53,8 @@ const callInfo = [
 function Call() {
   const [selectCall,setSelectCall] = useState<callinfoType>(callInfo[0])
   return (
-    <div className='bg-[#121E49] px-6'>
-      <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 pt-6 items-start'>
+    <div className='bg-[#121E49] px-4 lg:px-6'>
+      <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 pt-4 lg:pt-6 items-start'>
         <CallList callinfo ={callInfo} onSelect = {(call=>setSelectCall(call))} activeId={selectCall.id}/>
         <CallDetails selectCall ={selectCall}/>
       </div>

@@ -5,7 +5,7 @@ import RepairRequest from "@/components/dashboard/RepairRequest";
 
 export default function Home() {
   return (
-    <div className="bg-[#121E49] px-6">
+    <div className="bg-[#121E49] px-4 lg:px-6">
       <OverViewCard/>
       <CallTrends/>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">

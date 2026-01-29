@@ -11,8 +11,8 @@ function Setting() {
              lg:text-2xl flex items-center
               gap-15.75 border-b py-2
                border-[#192D71]`}>
-            <span onClick={()=>isActive(true)} className={`${active&&'underline underline-offset-15 decoration-[#87A2FF]'} cursor-pointer`}>Profile</span>
-            <span onClick={()=>isActive(false)} className={`${!active&&'underline underline-offset-15 decoration-[#87A2FF]'} cursor-pointer`}>Password Settings</span>
+            <span onClick={()=>isActive(true)} className={`${active&&'underline underline-offset-15 decoration-[#87A2FF]'} cursor-pointer text-[18px] md:text-[20px]  lg:text-2xl`}>Profile</span>
+            <span onClick={()=>isActive(false)} className={`${!active&&'underline underline-offset-15 decoration-[#87A2FF]'} cursor-pointer text-[18px] md:text-[20px] lg:text-2xl text-nowrap`}>Password Settings</span>
         </div>
         <div className='pt-5 lg:pt-10'>
            {active?

@@ -73,9 +73,9 @@ function AppointmentList() {
     <div>
         <div className='bg-linear-to-b from-[#1A1A2E] to-[#16213E] p-4 lg:p-6.25 rounded-2xl'>
             <span className='text-[16px] text-[#FFFFFF]'>Booking Link</span>
-          <div className='flex items-center gap-3 mt-4'>
+          <div className='flex flex-col md:flex-row items-center gap-3 mt-4'>
             <Inputs/>
-            <button className='px-3 cursor-pointer py-2 shadow-[inset_0_1px_18px_2px_#D2EAFF] flex items-center gap-4 bg-linear-to-b from-[#152252] to-[#111B3C]
+            <button className='px-2 lg:px-3 cursor-pointer py-2 shadow-[inset_0_1px_18px_2px_#D2EAFF] flex items-center gap-4 bg-linear-to-b from-[#152252] to-[#111B3C]
             rounded-xl text-white'
             ><Copy/> Copy Link</button>
           </div>

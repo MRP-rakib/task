@@ -13,8 +13,8 @@ function CallDetails({selectCall}:selectCallType) {
     'Dropped': 'bg-linear-to-r from-[rgba(255,21,0,0.2)] to-[rgba(251,44,54,0.2)] text-[#FF0404] border-[#FF6900]',
   }
   return (
-    <div className=' w-full flex flex-col gap-5.5'>
-      <div className=' flex items-center h-12.5 justify-end gap-6'>
+    <div className=' w-full flex flex-col gap-3 lg:gap-5.5'>
+      <div className=' hidden lg:flex items-center h-12.5 justify-end gap-4 lg:gap-6'>
           <FilterBtn option1='All Type' option2='Second Type' option3='Third Type'/>
           <FilterBtn option1='All Issues' option2='All Issues2' option3='All Issues3'/>
           <FilterBtn option1='Today' option2='Tomorrow' option3='Yesterday'/>
@@ -22,40 +22,40 @@ function CallDetails({selectCall}:selectCallType) {
         
       <div className='bg-[rgba(15,23,43,0.5)] border  border-[rgba(43,128,255,0.2)] rounded-2xl'>
        <div className='p-4 border-b border-[rgba(43,128,255,0.2)]'>
-         <h5 className='text-white text-[18px] lg:text-[20px]'>Call Details</h5>
+         <h5 className='text-white text-[16px] md:text-[18px] lg:text-[20px]'>Call Details</h5>
        </div>
-       <div className="p-6 flex flex-col gap-6">
+       <div className="p-4 lg:p-6 flex flex-col gap-4 lg:gap-6">
         <div className="grid grid-cols-2 gap-y-6 text-sm">
           <div>
-            <p className="text-[#90A1B9] text-[14px] mb-1">Phone Number</p>
-            <p className="text-white text-base">{selectCall.phoneNumber}</p>
+            <p className="text-[#90A1B9] text-[12px] lg:text-[14px] mb-1">Phone Number</p>
+            <p className="text-white text-[12px] lg:text-[14px]">{selectCall.phoneNumber}</p>
           </div>
           <div>
             <p className="text-[#90A1B9] text-[14px] mb-1">Duration</p>
-            <p className="text-white text-base">{selectCall.duration}</p>
+            <p className="text-white text-[12px] lg:text-[14px]">{selectCall.duration}</p>
           </div>
           <div>
             <p className="text-[#90A1B9] text-[14px] mb-1">Date & Time</p>
-            <p className="text-white text-base">{selectCall.dateTime}</p>
+            <p className="text-white text-[12px] lg:text-[14px]">{selectCall.dateTime}</p>
           </div>
           <div>
             <p className="text-[#90A1B9] text-[14px] mb-1">Issue Type</p>
-            <p className="text-white text-base">{selectCall.issueType}</p>
+            <p className="text-white text-[12px] lg:text-[14px]">{selectCall.issueType}</p>
           </div>
         </div>
         <div className="space-y-4">
           <div>
-            <p className="text-[#90A1B9] text-[14px] mb-2">Call Type</p>
+            <p className="text-[#90A1B9] text-[12px] lg:text-[14px] mb-2">Call Type</p>
             <span className={`${callTypeStyles[selectCall.callType]||'bg-gray-800'} px-3 py-1 rounded-full text-xs font-medium`}>
               {selectCall.callType}
             </span>
           </div>
           <div>
-            <p className="text-[#90A1B9] text-sm mb-1">Outcome</p>
-            <p className="text-white text-base">{selectCall.outcome}</p>
+            <p className="text-[#90A1B9] text-[12px] lg:text-[14px] mb-1">Outcome</p>
+            <p className="text-white text-[12px] lg:text-[14px]">{selectCall.outcome}</p>
           </div>
         </div>
-        <button className="w-full cursor-pointer flex items-center justify-center gap-2 py-3 bg-linear-to-r from-[rgba(172,70,255,0.2)] to-[rgba(246,51,155,0.2)] hover:opacity-90 transition rounded-xl text-[#C27AFF] font-medium">
+        <button className="w-full text-[14px] lg:text-[16px] cursor-pointer flex items-center justify-center gap-2 py-3 bg-linear-to-r from-[rgba(172,70,255,0.2)] to-[rgba(246,51,155,0.2)] hover:opacity-90 transition rounded-xl text-[#C27AFF] font-medium">
           <PlayCircle size={20} className="text-[#C27AFF]" />
           Play Audio Recording
         </button>
